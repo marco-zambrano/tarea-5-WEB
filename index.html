@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Cliente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1>Ingreso de datos del cliente</h1>
+            <p>Complete todos los campos requeridos</p>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Nombres</label>
+                <input type="text" id="name" placeholder="Ej. Marco Adrián">
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Apellidos</label>
+                <input type="text" id="lastName" placeholder="Ej. Zambrano Macías">
+            </div>
+
+            <div class="form-group">
+                <label for="ci">Cédula</label>
+                <input type="number" id="ci" placeholder="Ej. 1234567890" min="0">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" placeholder="Ej. 098346283">
+            </div>
+
+            <div class="form-group">
+                <label for="mail">Correo electrónico</label>
+                <input type="email" id="mail" placeholder="Ej. correo@dominio.com">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Dirección</label>
+                <input type="text" id="address" placeholder="Ej. Av. Principal 123">
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="btn btn-cancel">Cancelar</button>
+                <button type="submit" class="btn btn-submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
