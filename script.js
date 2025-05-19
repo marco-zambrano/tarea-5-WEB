@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ci: /^[0-9]{10}$/,
         phone: /^[0-9]{7,15}$/,
         mail: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
-        address: /^[a-zA-Z0-9áéíóúÁÉÍÓÚñÑ\s#.,-]{5,100}$/
+            
     };
 
     // Función para mostrar errores
@@ -129,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (confirmCancel) {
             form.reset();
             
-            // Limpiar todos los errores
+            // Limpiar todos los inputs
             const inputs = form.querySelectorAll('input');
             inputs.forEach(input => clearError(input));
         }
